@@ -58,7 +58,7 @@ class FacultyControllerTest {
     public void getFaculty() throws Exception {
         when(facultyRepository.findById(any(Long.class))).thenReturn(Optional.of(MOCK_FACULTY));
         mockMvc.perform(MockMvcRequestBuilders
-                        .get("/faculty"  + MOCK_FACULTY_ID)
+                        .get("/faculty" + MOCK_FACULTY_ID)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name").value(MOCK_FACULTY_NAME))

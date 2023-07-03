@@ -18,6 +18,7 @@ public class StudentServiceImpl implements StudentService {
     public StudentServiceImpl(StudentRepository repository) {
         this.repository = repository;
     }
+
     @Override
     public Student add(Student student) {
         return repository.save(student);

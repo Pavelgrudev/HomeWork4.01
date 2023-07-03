@@ -25,7 +25,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static ru.hogwarts.school.TestConstants.*;
 
 
-
 @WebMvcTest(controllers = StudentController.class)
 class StudentControllerTest {
 

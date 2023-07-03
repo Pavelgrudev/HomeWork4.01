@@ -59,10 +59,11 @@ public class AvatarController {
             is.transferTo(os);
         }
     }
+
     @GetMapping("/page")
     @Operation(summary = "Получить страницу аватаров")
-    public ResponseEntity<List<Avatar>>getPage(@RequestParam Integer pageNumber, @RequestParam Integer pageSize){
-        List<Avatar>avatars=avatarService.getPage(pageNumber,pageSize);
+    public ResponseEntity<List<Avatar>> getPage(@RequestParam Integer pageNumber, @RequestParam Integer pageSize) {
+        List<Avatar> avatars = avatarService.getPage(pageNumber, pageSize);
         return ResponseEntity.ok(avatars);
     }
 

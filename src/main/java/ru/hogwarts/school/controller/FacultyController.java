@@ -48,6 +48,7 @@ public class FacultyController {
         Faculty faculty = service.get(id);
         return ResponseEntity.ok(faculty);
     }
+
     @GetMapping("/all")
     @Operation(summary = "Получение всех факультетов")
     public ResponseEntity<Collection<Faculty>> getAll() {

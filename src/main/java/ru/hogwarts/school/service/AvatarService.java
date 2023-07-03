@@ -13,6 +13,6 @@ public interface AvatarService {
 
     void upLoadAvatar(Long studentId, MultipartFile avatarFile) throws IOException;
 
-    List<Avatar> getPage(Integer pageNumber , Integer pageSize);
+    List<Avatar> getPage(Integer pageNumber, Integer pageSize);
 
 }

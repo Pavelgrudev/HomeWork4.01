@@ -1,6 +1,6 @@
 package ru.hogwarts.school.service.impl;
 
-import jakarta.transaction.Transactional;
+import  jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

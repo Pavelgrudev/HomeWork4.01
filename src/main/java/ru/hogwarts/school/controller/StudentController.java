@@ -69,18 +69,21 @@ public class StudentController {
         Faculty faculty = service.get(studentId).getFaculty();
         return ResponseEntity.ok(faculty);
     }
+
     @GetMapping("count")
     @Operation(summary = "Получение количества студентов")
-    public ResponseEntity<Integer>getStudentsCount() {
+    public ResponseEntity<Integer> getStudentsCount() {
         Integer count = service.getStudentsCount();
         return ResponseEntity.ok(count);
     }
+
     @GetMapping("age/average")
     @Operation(summary = "Получение среднего возраста студентов")
-    public ResponseEntity<Float>getStudentsAverageAge() {
+    public ResponseEntity<Float> getStudentsAverageAge() {
         Float averageAge = service.getStudentsAverageAge();
         return ResponseEntity.ok(averageAge);
     }
+
     @GetMapping("/last")
     @Operation(summary = "получение 5-ти последних студентов")
     public ResponseEntity<Collection<Student>> getLastFiveStudents() {

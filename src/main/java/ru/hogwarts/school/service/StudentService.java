@@ -21,11 +21,10 @@ public interface StudentService {
 
 
     Integer getStudentsCount();
+
     Float getStudentsAverageAge();
+
     List<Student> getLastFiveStudents();
-
-
-
 
 
 }

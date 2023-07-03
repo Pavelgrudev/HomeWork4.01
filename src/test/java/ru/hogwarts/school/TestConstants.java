@@ -1,6 +1,6 @@
 package ru.hogwarts.school;
 
-import ru.hogwarts.school.model.Faculty;
+import  ru.hogwarts.school.model.Faculty;
 import ru.hogwarts.school.model.Student;
 
 import java.util.Collections;
